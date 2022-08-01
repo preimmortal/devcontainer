@@ -22,8 +22,8 @@ custom-backward-delete-word() {
 
 zle -N custom-backward-delete-word
 
-bindkey "^L" forward-word
-bindkey "^K" backward-word
+bindkey "^K" forward-word
+bindkey "^J" backward-word
 bindkey "^H" custom-backward-delete-word
 
 # OhMyZSH
