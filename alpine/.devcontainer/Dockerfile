@@ -5,7 +5,7 @@ FROM alpine:latest
 WORKDIR /app
 
 # Install Base Packages
-RUN apk add git curl zsh
+RUN apk add git ssh curl zsh
 
 # Change Shell
 RUN sed -i 's#^root.*#root:x:0:0:root:/root:/bin/zsh#' /etc/passwd

@@ -5,7 +5,7 @@ FROM debian:latest
 WORKDIR /app
 
 RUN apt update -y
-RUN apt install -y git curl zsh 
+RUN apt install -y git ssh curl zsh 
 
 # Change Shell
 RUN sed -i 's#^root.*#root:x:0:0:root:/root:/bin/zsh#' /etc/passwd
